@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/toolTip_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Default Title"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Default Description"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+    <!-- Add_20170508_ITS#24768_ThucPT add button Start -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tooltips_btn_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="前へ"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/tooltips_text_blue"
+            android:background="@drawable/bg_btn_back"/>
+
+        <Button
+            android:id="@+id/tooltips_btn_next"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="次へ"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:background="@drawable/bg_btn_next"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tooltips_btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:text="チュートリアルを終了する"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/White"
+        android:background="@drawable/bg_btn_close"/>
+    <!-- Add_20170508_ITS#24768_ThucPT add button End -->
+
+</LinearLayout>

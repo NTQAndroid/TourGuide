@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="White">#FFFFFF</color>
+    <color name="Yellow">#FFFF00</color>
+
+    //Color Swatches provided by http://designmodo.github.io/Flat-UI/
+
+    <!-- Navigational drawer selected item highlight color-->
+
+    <!-- Add_20170508_ITS#24768_ThucPT add color values Start -->
+    <color name="tooltips_text_yellow">@color/Yellow</color>
+    <color name="tooltips_text_blue">#017cf9</color>
+
+    <!-- Add_20170508_ITS#24768_ThucPT add color values End -->
+</resources>

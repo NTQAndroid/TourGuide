@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+//Properties getGradleProperties(){
+//    def gradlePropsFile = file('../gradle.properties')
+//    def Properties gradleProps = new Properties()
+//    if (gradlePropsFile.canRead()) {
+//        gradleProps.load(new FileInputStream(gradlePropsFile))
+//        println gradleProps['VERSION_CODE']
+//        println gradleProps['VERSION_NAME']
+//    }
+//    else {
+//        throw new GradleException("Could not read gradle.properties!")
+//    }
+//    gradleProps;
+//}
+
+android {
+    compileSdkVersion libs.versions.compileSdk.get().toInteger()
+    //    def gradleProps = getGradleProperties()
+    defaultConfig {
+        minSdkVersion libs.versions.minSdk.get().toInteger()
+        targetSdkVersion libs.versions.targetSdk.get().toInteger()
+//        versionCode gradleProps['VERSION_CODE'].toInteger()
+//        versionName gradleProps['VERSION_NAME']
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'tourguide.tourguide'
+    lint {
+        abortOnError false
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation libs.androidx.appcompat
+    implementation libs.floatingactionbutton
+}
